@@ -1,6 +1,10 @@
 import streamlit as st
 from transformers import pipeline, AutoTokenizer, AutoModelForMaskedLM
+
 import spacy
+import en_core_web_sm
+nlp = en_core_web_sm.load()
+
 import networkx as nx
 import matplotlib.pyplot as plt
 from PIL import Image
