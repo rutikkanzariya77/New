@@ -30,7 +30,7 @@ st.markdown("""
 <style>
     .main-header {
         font-size: 3rem;
-        color: #2E8B57;
+        color: white;
         text-align: center;
         margin-bottom: 2rem;
     }
