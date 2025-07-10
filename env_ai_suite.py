@@ -30,18 +30,70 @@ st.markdown("""
 <style>
     .main-header {
         font-size: 3rem;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
         margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
     .section-header {
         font-size: 2rem;
-        color: #228B22;
+        color: #FFFFFF;
         margin-top: 2rem;
         margin-bottom: 1rem;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
     .stApp {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+    }
+    .stApp > div {
+        background: transparent;
+    }
+    .main .block-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 2rem;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .stSelectbox label, .stTextArea label, .stTextInput label, .stSlider label {
+        color: #FFFFFF !important;
+        font-weight: 600;
+    }
+    .stMarkdown {
+        color: #FFFFFF;
+    }
+    .stSidebar {
+        background: linear-gradient(180deg, #2c5530 0%, #1a3d1f 100%);
+    }
+    .stSidebar .stSelectbox label {
+        color: #FFFFFF !important;
+    }
+    .css-1d391kg {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .stButton > button {
+        background: linear-gradient(45deg, #4CAF50, #45a049);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    .stSuccess, .stInfo, .stWarning, .stError {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -556,9 +608,9 @@ def main():
     # Footer
     st.markdown("---")
     st.markdown("""
-    <div style='text-align: center; color: #666;'>
-        <p>Environmental AI Suite - Powered by Streamlit</p>
-        <p>🌍 Building a sustainable future through AI 🌱</p>
+    <div style='text-align: center; color: #FFFFFF; padding: 2rem 0; background: rgba(0,0,0,0.2); border-radius: 10px; margin-top: 2rem;'>
+        <p style='font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;'>Environmental AI Suite - Powered by Streamlit</p>
+        <p style='font-size: 1.1rem; margin: 0;'>🌍 Building a sustainable future through AI 🌱</p>
     </div>
     """, unsafe_allow_html=True)
 
